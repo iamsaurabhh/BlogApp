@@ -3,7 +3,7 @@ const cors = require("cors");
 const { connectDB } = require("./connection")
 const BlogPost = require("./models/BlogPost")
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 
 //connect database
