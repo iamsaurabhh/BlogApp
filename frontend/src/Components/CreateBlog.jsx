@@ -14,7 +14,7 @@ const CreateBlog = () => {
        description,
     };
 
-    const response = await fetch("http://localhost:5000/post-blog",{
+    const response = await fetch("https://blogapp-eht3.onrender.com/post-blog",{
       method : "POST",
       headers : {
         "Content-Type" : "application/json",
