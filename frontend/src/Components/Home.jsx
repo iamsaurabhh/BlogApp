@@ -17,14 +17,14 @@ useEffect(() => {
 
 
   const getPosts = async () => {
-    const response = await fetch("http://localhost:5000/getBlog");
+    const response = await fetch("https://blogapp-eht3.onrender.com/getBlog");
     const data = await response.json();
     setposts(data.blogs);
   }
 
 
   const deletePost = async (id) => {
-    const response = await fetch(`http://localhost:5000/deleteBlog/${id}`, {
+    const response = await fetch(`https://blogapp-eht3.onrender.com/deleteBlog/${id}`, {
       method: "DELETE",
     })
 
@@ -36,7 +36,7 @@ useEffect(() => {
   };
 
   const updatePost = async(id) => {
-    const response = await fetch(`http://localhost:5000/update-blog/${id}`,{
+    const response = await fetch(`https://blogapp-eht3.onrender.com/update-blog/${id}`,{
       method: "PUT",
       headers:{
         "Content-Type": "application/json",
